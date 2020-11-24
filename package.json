@@ -1,5 +1,5 @@
 {
-  "name": "apollo-server",
+  "name": "apollo-server3",
   "description": "",
   "dependencies": {
     "apollo-server": "2.9.7",
