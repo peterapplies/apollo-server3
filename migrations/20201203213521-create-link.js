@@ -9,15 +9,15 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       slug: {
-        allowNull: false,
         type: Sequelize.STRING
       },
       description: {
-        allowNull: false,
         type: Sequelize.STRING
       },
       link: {
-        allowNull: false,
+        type: Sequelize.STRING
+      },
+      shortLink: {
         type: Sequelize.STRING
       },
       createdAt: {

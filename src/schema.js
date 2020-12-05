@@ -6,6 +6,7 @@ const typeDefs = gql`
     slug: String!
     description: String!
     link: String!
+    shortLink: String!
   }
 
   type Query {
@@ -14,7 +15,12 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    createLink(slug: String!, description: String!, link: String!): Link!
+    createLink(
+      slug: String
+      description: String!
+      link: String!
+      shortLink: String
+    ): Link!
   }
 `;
 

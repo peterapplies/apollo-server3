@@ -1,6 +1,7 @@
 const { ApolloServer } = require("apollo-server");
-const typeDefs = require("./schema");
-const resolvers = require("./resolvers");
+
+const typeDefs = require("./src/schema");
+const resolvers = require("./src/resolvers");
 const models = require("./models");
 
 const server = new ApolloServer({
@@ -9,4 +10,6 @@ const server = new ApolloServer({
   context: { models }
 });
 
-server.listen().then(({ url }) => console.log(`Server is running on ${url}`));
+server.listen().then(({ url }) => {
+  console.log(`🚀  Server ready at ${url}`);
+});
